@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "camara-deputado-v2"
+version = "0.1.0"
+description = ""
+authors = ["LucianoBorba <luhborbafilho@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+taskipy = "^1.12.2"
+pre-commit = "^3.7.0"
+mkdocs = "^1.5.3"
+mkdocstrings = "^0.24.3"
+black = "^24.3.0"
+isort = "^5.13.2"
+pip-audit = "^2.7.2"
+pydocstyle = "^6.3.0"
+mkdocs-material = "^9.5.17"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+run = "black . && isort ."
+check = "pydocstyle && pip-audit"
