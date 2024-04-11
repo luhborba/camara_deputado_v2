@@ -6,7 +6,7 @@ authors = ["LucianoBorba <luhborbafilho@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
 taskipy = "^1.12.2"
 pre-commit = "^3.7.0"
 mkdocs = "^1.5.3"
@@ -16,6 +16,9 @@ isort = "^5.13.2"
 pip-audit = "^2.7.2"
 pydocstyle = "^6.3.0"
 mkdocs-material = "^9.5.17"
+duckdb = "^0.10.1"
+apache-airflow = "^2.9.0"
+requests = "^2.31.0"
 
 
 [build-system]
